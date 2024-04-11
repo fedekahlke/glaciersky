@@ -1192,7 +1192,7 @@ blockquote footer {
     transform: translateY(0);
 }
 
-/* .btn-top {
+.btn-top {
     position: fixed;
     right: 15px;
     bottom: -5rem;
@@ -1210,23 +1210,23 @@ blockquote footer {
     visibility: hidden;
 }
 
-.btn-top.active {
+/* .btn-top.active {
     opacity: 1;
     visibility: visible;
     bottom: 15px;
-}
+} */
 
-.btn-top:hover {
+/* .btn-top:hover {
     border-color: var(--accent-color);
     fill: var(--accent-color);
-}
+} */
 
 .btn-top > svg {
     width: 0.875rem;
     height: 0.625rem;
     margin: auto;
     transform: rotate(-90deg);
-} */
+}
 
 /* 3.4 Forms */
 *::-webkit-input-placeholder,
@@ -3796,7 +3796,7 @@ body.mmm-open .mmm {
     border-radius: 5px;
     overflow: hidden;
     transition: box-shadow 0.3s ease;
-    height: 620px;
+    height: 600px;
 
 }
 
