@@ -1192,7 +1192,7 @@ blockquote footer {
     transform: translateY(0);
 }
 
-.btn-top {
+/* .btn-top {
     position: fixed;
     right: 15px;
     bottom: -5rem;
@@ -1226,7 +1226,7 @@ blockquote footer {
     height: 0.625rem;
     margin: auto;
     transform: rotate(-90deg);
-}
+} */
 
 /* 3.4 Forms */
 *::-webkit-input-placeholder,
@@ -3697,7 +3697,7 @@ body.mmm-open .mmm {
   .whatsapp-btn {
     position: fixed;
     bottom: 14px;
-    left: 20px;
+    right: 20px;
     z-index: 1000;
   }
 
@@ -3796,7 +3796,7 @@ body.mmm-open .mmm {
     border-radius: 5px;
     overflow: hidden;
     transition: box-shadow 0.3s ease;
-    height: 600px;
+    height: 620px;
 
 }
 
@@ -3826,6 +3826,48 @@ body.mmm-open .mmm {
     color: #666;
 }
 
+/*Estilos para el footer*/
+.footer {
+    background-color: #f8f9fa;
+    padding: 30px 0;
+    text-align: center; /* Centra el contenido del footer */
+}
+
+.footer-main {
+    padding-top: 20px;
+}
+
+.logo {
+    display: block;
+    margin: 0 auto 20px; /* Centra el logo y añade espacio debajo */
+    max-width: 100%; /* Hace que el logo sea responsive */
+    height: auto; /* Para mantener la proporción */
+}
+
+.footer-nav {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footer-nav li {
+    display: inline;
+    margin: 0 10px; /* Espacio entre los elementos de la lista */
+}
+
+.footer-nav li:last-child {
+    margin-right: 0; /* Quita el margen derecho del último elemento de la lista */
+}
+
+.footer-nav a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-nav a:hover {
+    color: #007bff;
+}
 
 
 
