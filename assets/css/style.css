@@ -551,12 +551,13 @@ blockquote footer {
 
 .item-border-radius {
     border-radius: var(--el-border-radius);
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
-.item-bordered {
+/* .item-bordered {
     border: 1px solid var(--border-color);
-}
+} */
+
 
 .el {
     --el-custom-size: 100%;
