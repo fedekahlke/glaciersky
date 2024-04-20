@@ -10,7 +10,7 @@ Version: 2.0.0
 :root {
     --font-family: "Source Sans Pro";
     --font-size: 16px;
-    --font-weight: 400;
+    --font-weight: 500;
     --font-style: normal;
     --line-height: 1.625;
     --heading-font-family: "Montserrat";
@@ -22,7 +22,7 @@ Version: 2.0.0
     --el-gradient-end: #1c1950;
     --background-color: #ffffff;
     --background-secondary-color: #F0F4F8;
-    --text-primary: #303036;
+    --text-primary: black;
     --text-secondary: #63636b;
     --border-color: #D4D4E1;
     --placeholder-color: #6F6F76;
@@ -1037,7 +1037,7 @@ blockquote footer {
 }
 
 .btn.btn-small {
-    font-size: 0.875rem;
+    font-size: 0.950rem;
 }
 
 .btn.btn-small.btn-with-icon > svg {
@@ -1053,8 +1053,8 @@ blockquote footer {
 
 .btn.btn-border {
     background: transparent;
-    color: var(--text-primary);
-    fill: var(--text-primary);
+    color: white;
+    fill: black;
 }
 
 .btn.btn-border:hover {
@@ -1069,13 +1069,13 @@ blockquote footer {
     top: 0;
     width: 100%;
     height: 100%;
-    border: 1px solid var(--text-primary);
+    border: 1.8px solid white;
     border-radius: var(--el-border-radius-min);
     overflow: hidden;
 }
 
 .btn.btn-border .el-ripple-circle {
-    background: var(--text-primary);
+    background: rgb(102, 102, 102);
 }
 
 .btn.btn-with-icon {
@@ -1101,7 +1101,7 @@ blockquote footer {
     outline: none;
 }
 
-.btn:hover {
+/* .btn:hover {
     color: var(--background-color);
     fill: var(--background-color);
 }
@@ -1127,7 +1127,7 @@ blockquote footer {
     border-radius: 50%;
     animation: ripple 1s ease forwards;
     z-index: 3;
-}
+} */
 
 @keyframes ripple {
     0% {
