@@ -3877,30 +3877,33 @@ body {
     transform: translateY(-5px);
 }
 
+
+.card-link {
+    text-decoration: none;
+    color: inherit;
+}
+
 .card-img-top {
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    object-fit: cover;
-    height: 250px;
+    width: 100%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
 }
 
 .card-body {
-    padding: 20px;
+    padding: 15px;
 }
 
 .card-title {
-    font-size: 22px;
-    font-weight: bold;
+    color: #333;
+    font-size: 24px;
     margin-bottom: 10px;
-    color: #1c1950;
     text-align: center;
 }
 
 .card-text {
-    font-size: 16px;
     color: #666;
-    margin-bottom: 20px;
-    text-decoration:none;
+    font-size: 16px;
+    margin-bottom: 15px;
 }
 
 .duracion-excursion {
@@ -3986,3 +3989,5 @@ body {
 .footer-nav a:hover {
     color: #007bff;
 }
+
+
