@@ -190,9 +190,7 @@
                             </div>
                         </div>
                         <div class="col-xl-8 col-md-7 content-item">
-                            <form action="#!" method="post" class="form-submission contact-form contact-form-padding"
-                                novalidate>
-                                <input type="hidden" name="Subject" value="Contact form">
+                            <form id="contact-form" class="form-submission contact-form contact-form-padding" novalidate>
                                 <div class="row gutters-default">
                                     <div class="col-12">
                                         <h3>Formulario de contacto</h3>
@@ -200,39 +198,28 @@
                                     <div class="col-xl-4 col-sm-6 col-12">
                                         <div class="form-field">
                                             <label for="contact-name" class="form-field-label">Nombre Completo</label>
-                                            <input type="text" class="form-field-input" name="Name" value=""
-                                                autocomplete="off" id="contact-name" required
-                                                data-pristine-required-message="This field is required.">
+                                            <input type="text" class="form-field-input" name="Name" value="" autocomplete="off" id="contact-name" required>
                                         </div>
                                     </div>
                                     <div class="col-xl-4 col-sm-6 col-12">
                                         <div class="form-field">
-                                            <label for="contact-phone" class="form-field-label">Numero de
-                                                telefono</label>
-                                            <input type="tel" class="form-field-input mask-phone" name="Phone" value=""
-                                                autocomplete="off" id="contact-phone" required
-                                                data-pristine-required-message="This field is required.">
+                                            <label for="contact-phone" class="form-field-label">Número de teléfono</label>
+                                            <input type="tel" class="form-field-input" name="Phone" value="" autocomplete="off" id="contact-phone" required>
                                         </div>
                                     </div>
                                     <div class="col-xl-4 col-12">
                                         <div class="form-field">
-                                            <label for="contact-email" class="form-field-label">Direccion de
-                                                Email</label>
-                                            <input type="email" class="form-field-input" name="Email" value=""
-                                                autocomplete="off" id="contact-email" required
-                                                data-pristine-required-message="This field is required."
-                                                data-pristine-email-message="Please enter a valid email address.">
+                                            <label for="contact-email" class="form-field-label">Dirección de Email</label>
+                                            <input type="email" class="form-field-input" name="Email" value="" autocomplete="off" id="contact-email" required>
                                         </div>
                                     </div>
                                     <div class="col-12">
                                         <div class="form-field">
                                             <label for="contact-message" class="form-field-label">Su mensaje</label>
-                                            <textarea name="Message" class="form-field-input" id="contact-message"
-                                                cols="30" rows="6"></textarea>
+                                            <textarea name="Message" class="form-field-input" id="contact-message" cols="30" rows="6"></textarea>
                                         </div>
                                         <div class="form-btn">
-                                            <button type="submit" class="btn btn-w240 ripple"><span>Enviar
-                                                    mensaje</span></button>
+                                            <button type="submit" class="btn btn-w240 ripple"><span>Enviar mensaje</span></button>
                                         </div>
                                     </div>
                                 </div>
@@ -241,6 +228,24 @@
                     </div>
                 </div>
             </div>
+            
+            <script>
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+            
+                var name = document.getElementById('contact-name').value;
+                var phone = document.getElementById('contact-phone').value;
+                var email = document.getElementById('contact-email').value;
+                var message = document.getElementById('contact-message').value;
+            
+                var whatsappMessage = `Hola, mi nombre es ${name}. Mi número de teléfono es ${phone} y mi correo electrónico es ${email}.\n\nMensaje:\n${message}`;
+            
+                var whatsappUrl = `https://wa.me/5492966234503?text=${encodeURIComponent(whatsappMessage)}`;
+            
+                window.open(whatsappUrl, '_blank');
+            });
+            </script>
+            
 
             <!-- Begin map -->
             <div class="map">
