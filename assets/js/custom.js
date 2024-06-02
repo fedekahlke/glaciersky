@@ -422,14 +422,4 @@ $(".flip").click(function(){
   });
 
 
-
-  window.addEventListener('load', function() {
-    var loader = document.getElementById('loader');
-    var content = document.getElementById('content');
-
-    // Oculta el loader
-    loader.style.display = 'none';
-
-    // Muestra el contenido de la página
-    content.style.display = 'block';
-});
+  
